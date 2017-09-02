@@ -80,32 +80,34 @@ renderButtons();
                         // Creating a paragraph tag with the result item's rating
                         var p = $("<p>").text("Rating: " + results[i].rating);
 
+
+
+
+
                         // Creating and storing an image tag
                         var animalImage = $("<img>");
                         // Setting the src attribute of the image to a property pulled off the result item
-                        animalImage.attr("src", results[i].images.fixed_height_still.url);
 
                         // Appending the paragraph and image tag to the animalDiv
                         animalDiv.append(p);
                         animalDiv.append(animalImage);
+
+
                         animalImage.addClass("gifs");
                         animalDiv.addClass("gif-div");
-                        animalImage.attr("data-state", "still")
+                        animalImage.attr("src", results[i].images.fixed_height_still.url);
+                        animalImage.attr("data-state", "still");
+                        animalImage.attr("data-still", results[i].images.fixed_height_still.url);
+                        animalImage.attr("data-animate", results[i].images.fixed_height.url);
+
+
 
                         // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
                         $("#gifs-appear-here").prepend(animalDiv);
 
 
-                        var animalGif = $("<img>");
-                        // Setting the src attribute of the image to a property pulled off the result item
-                        animalGif.attr("src", results[i].images.fixed_height.url);
 
-                        // Appending the paragraph and image tag to the animalDiv
 
-                        animalGif.attr("data-state", "data-animate")
-
-                        // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
-                        $("#gifs-appear-here").prepend(animalDiv);
 
                     }
 
@@ -122,10 +124,10 @@ renderButtons();
         // Then, set the image's data-state to animate
         // Else set src to the data-still value
         if (state === "still") {
-            $(this).attr("src", $(this).attr("data-animate"));
-            $(this).attr("data-state", "animate");
+            $(this).attr("src", $(this).data("animate"));
+            $(this).attr("data-state", "animated");
         } else {
-            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("src", $(this).data("still"));
             $(this).attr("data-state", "still");
         }
     })
