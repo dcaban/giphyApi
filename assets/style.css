@@ -1,5 +1,82 @@
+body{
+    background-color: #D0D3C5;
+    color: darkslategray;
+}
+
 .gif-div{
     display: inline-block;
     float: left;
+    
+}
+#nyan{
 
+ margin-top: -70px;
+ width: 100%;
+
+    margin-bottom: -50px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    background-color: slateblue;
+    padding: 25px;
+    padding-left: 0px;
+    background-color: #032B2F;
+    color: #D0D3C5;
+    border-radius: 0px;
+
+
+}
+
+button{
+    margin: 4px;
+    border-radius: 5px;
+    color: lightgray;
+
+}
+
+
+input{
+    margin: 10px;
+    border-radius: 5px;
+    color: lightgray;
+
+}
+.ani{
+    background-color:;
+}
+#animal-form{
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    color: lightgray;
+    font-weight: 200;
+    font-size: 70px;
+}
+
+#animal-input{
+    width: 506px;
+    height: 40px;
+    color: darkslategray;
+
+}
+
+.gif-div{
+    margin: 5px;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.ratings{
+
+    margin: auto;
+    margin-top: 10px;
+}
+h3{
+    margin-top: -70px;
+    font-weight: 200;
 }

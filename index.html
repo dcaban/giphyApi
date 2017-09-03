@@ -9,25 +9,31 @@
 </head>
 
 <body>
-<div class="container text-center">
+
     <div class="jumbotron">
 
-<!-- Rendered Buttons will get Dumped Here  -->
-<span id="buttons-view"></span>
-
-    <h1>Animal Search</h1>
+    <h1 class="text-center">Animal Gifs!</h1>
 
 
 
-    <form id="animal-form">
-        <label for="animal-input">Add an animal</label>
+    <form class="text-center" id="animal-form">
+
         <input type="text" id="animal-input"><br>
 
 
         <!-- Button triggers new animal to be added -->
-        <input id="add-ani" type="submit" value="Add a cool animal">
+        <input id="add-ani" type="submit" class="btn btn-danger" value="└(=^‥^=)┐ Type In A Cool Animal Then Click Here └(=^‥^=)┐">
     </form>
-    </div>
+        <img  id="nyan" class="text-left" src="assets/images/nyancat.gif">
+
+<div class="text-center">
+    <h3>Then Click These Buttons Below</h3>
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <span id="buttons-view"></span>
+</div>
+</div>
+
+
     <div class="container d-inline-block">
 <div id="gifs-appear-here"></div>
 

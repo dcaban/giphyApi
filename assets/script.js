@@ -17,7 +17,7 @@ $(document).ready(function () {
             // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
             var a = $("<button>");
             // Adding a class of ani to our button
-            a.addClass("ani");
+            a.addClass("ani btn btn-danger");
             // Adding a data-attribute
             a.attr("data-animal", animals[i]);
             // Providing the initial button text
@@ -92,7 +92,7 @@ renderButtons();
                         animalDiv.append(p);
                         animalDiv.append(animalImage);
 
-
+                        p.addClass("ratings text-center");
                         animalImage.addClass("gifs");
                         animalDiv.addClass("gif-div");
                         animalImage.attr("src", results[i].images.fixed_height_still.url);
