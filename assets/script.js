@@ -54,7 +54,7 @@ renderButtons();
             var animal = $(this).attr("data-animal");
                 console.log(animal);
             // Constructing a queryURL using the animal name
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
                 animal + "&api_key=a780e565477e45fba164d71635f6f76a&limit=10";
 
             // Performing an AJAX request with the queryURL
