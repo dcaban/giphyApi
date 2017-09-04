@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 // Initial array of animals
-    var animals = ["lion", "dog", "tiger"];
+    var animals = ["Shark", "Dog", "Tiger"];
 
 // Function for displaying animal data
     function renderButtons() {
