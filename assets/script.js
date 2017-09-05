@@ -49,6 +49,7 @@ renderButtons();
 // Adding click event listen listener to all buttons
         $(document).on("click",".ani",function() {
             console.log("clickled");
+            $(".gif-div").empty();
 
             // Grabbing and storing the data-animal property value from the button
             var animal = $(this).attr("data-animal");
